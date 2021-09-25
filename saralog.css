@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+/*全体*/
+body{
+    height: auto;
+}
+
+.wrapper{
+    max-width: 600px;
+    max-height: 500px;
+    margin: 0 auto;
+    color: #666;
+}
+.title{
+    font-size: 48px;
+    text-align: center;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 42.16px;
+}
+#header {
+    text-align: center;
+    position: relative;
+    left: -270px;
+    top: -15px;
+    font-size: 24px;
+    width: 100%;
+}
+
+/* 会心の一皿 */
+.favorite{
+    text-align: center;
+    position: absolute;
+    top: 97px;
+    left:830px;
+}
+
+/* 食料庫 */
+.stock{
+    text-align: center;
+    position: absolute;
+    top: 97px;
+    left: 1100px;
+}
+
+/*カレンダー*/
+.dish{
+    position: relative;
+    top: -80px;
+    left: -300px;
+}
+#calendar {
+    text-align: center;
+    width: 100%;
+}
+table {
+    outline: 2px solid #ddd;
+    border-collapse: collapse;
+    width: 100%;
+}
+th {
+    color: #000;
+}
+th, td {
+    outline: 1px solid #ddd;
+    padding-top: 5px;
+    text-align: center;
+}
+/*日曜日*/
+td:first-child {
+    color: red;
+}
+/*土曜日*/
+td:last-child {
+    color: blue;
+}
+/*前後月の日付*/
+td.disabled {
+    color: #ccc;
+}
+/*本日*/
+td.today {
+    background-color: #D65E72;
+    color: #fff;
+}
+
+/*ボタン*/
+#next-prev-button {
+    position: relative;
+}
+#next-prev-button button{
+    cursor: pointer;
+    background: #0bd626;
+    color: #fff;
+    border: 1px solid #0bd626;
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: 0.5rem 2rem;
+    margin: 1rem 0;
+}
+#next-prev-button button:hover{
+    background-color: #D4BB92;
+    border-color: #D4BB92;
+}
+#prev {
+    float: left;
+}
+#next {
+    position: relative;
+    right:-518px;
+    z-index: 1000;
+}
+
+/* save&clear btn */
+ul{
+    padding: 0;
+    display:flex;  /* 定義 */
+    table-layout: fixed;
+    justify-content: space-between;
+    width:300px;
+    position: absolute;
+    top: 580px;
+    left: 938px;
+}
+li{
+    list-style-type:none;
+    /* border: 1px solid #666;
+    background-color: #FFF; */
+    /* display:table-cell;  定義 */
+    cursor: pointer;
+}
